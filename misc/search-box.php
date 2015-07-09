@@ -6,7 +6,7 @@ printf( '<div class="%s">', 'search-meta' );
 
 		printf( '<h1 %s>', hybrid_get_attr( 'loop-title' ) );
 
-			echo __( 'New Search', 'hybopress' );
+			echo __( 'New Search', 'classic' );
 
 		echo '</h1>';
 
@@ -14,7 +14,7 @@ printf( '<div class="%s">', 'search-meta' );
 
 			printf( '<p>' );
 
-				echo __( 'If you are not happy with the results below please do another search', 'hybopress' );
+				echo __( 'If you are not happy with the results below please do another search', 'classic' );
 
 			echo '</p>';
 

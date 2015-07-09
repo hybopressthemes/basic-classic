@@ -6,15 +6,15 @@
 				<?php echo get_avatar( $comment, 40 ); ?>
         	</span>
 			<cite <?php hybrid_attr( 'comment-author' ); ?>><?php comment_author_link(); ?></cite>
-			<a <?php hybrid_attr( 'comment-permalink' ); ?>><time <?php hybrid_attr( 'comment-published' ); ?>><?php printf( __( '%1$s at %2$s', 'hybopress' ), get_comment_date(), get_comment_time() ); ?></time></a>
+			<a <?php hybrid_attr( 'comment-permalink' ); ?>><time <?php hybrid_attr( 'comment-published' ); ?>><?php printf( __( '%1$s at %2$s', 'classic' ), get_comment_date(), get_comment_time() ); ?></time></a>
 
-			<?php edit_comment_link( __( 'Edit This', 'hybopress' ), '(', ')' ); ?>
+			<?php edit_comment_link( __( 'Edit This', 'classic' ), '(', ')' ); ?>
         </header><!-- .comment-meta -->
 
 		<div <?php hybrid_attr( 'comment-content' ); ?>>
 			<?php if ( '0' == $comment->comment_approved ) : ?>
 				<p>
-					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'hybopress' ); ?></em>
+					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'classic' ); ?></em>
 				</p>
 			<?php endif; ?>
 			<?php comment_text(); ?>
