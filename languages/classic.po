@@ -1,0 +1,51 @@
+# Translation of Classic in English
+# This file is distributed under the same license as the Classic package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: +0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"Project-Id-Version: Classic\n"
+
+#: comment/comment.php:9 comment/ping.php:5
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: comment/comment.php:11
+msgid "Edit This"
+msgstr ""
+
+#: comment/comment.php:17
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: misc/search-box.php:9
+msgid "New Search"
+msgstr ""
+
+#: misc/search-box.php:17
+msgid "If you are not happy with the results below please do another search"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Basic Classic"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://hybopressthemes.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Hybopress Basic child theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "HyBoPress"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://hybopressthemes.com"
+msgstr ""
