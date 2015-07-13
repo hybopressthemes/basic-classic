@@ -50,6 +50,9 @@ function child_theme_setup1() {
 
 	add_theme_support( 'custom-header', $args );
 
+	// Registering required plugin
+	add_filter( 'hybopress_registered_plugins', 'child_theme_registered_plugins' );
+
 }
 
 function child_theme_register_styles() {
@@ -101,18 +104,30 @@ function child_theme_header_style() {
     }
 
     // If we get this far, we have custom styles.
-    ?>
-    <style type="text/css">
-    <?php
-    if ( ! empty( $header_image ) ) {
-        ?>
-            .site-header {
-                background: url(<?php header_image(); ?>) no-repeat scroll top;
-                background-size: 1200px auto;
-            }
-        <?php
-    }
-        ?>
-    </style>
-    <?php
+
+    printf( '<style type="text/css">' );
+
+	    if ( ! empty( $header_image ) ) {
+	        ?>
+	            .site-header {
+	                background: url(<?php header_image(); ?>) no-repeat scroll top;
+	                background-size: 1200px auto;
+	            }
+	        <?php
+	    }
+
+	echo '</style>';
+
+}
+
+function child_theme_registered_plugins( $registered_plugins ) {
+
+	$registered_plugins[] = array(
+								'name'      => 'Custom Header Extended',
+								'slug'      => 'custom-header-extended',
+								'required'  => false,
+							);
+
+	return $registered_plugins;
+
 }
