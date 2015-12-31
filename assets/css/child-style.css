@@ -68,6 +68,19 @@ body,
 	padding-right: 3%;
 }
 
+span.edit-this {
+	display: inline-block;
+}
+
+span.edit-this .comment-edit-link {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.comment-list li.ping, .comment-list .comment-content {
+    margin-top: 6px;
+}
+
 .content-area:before {
   content: "";
   position: absolute;

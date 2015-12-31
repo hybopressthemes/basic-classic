@@ -1,2 +1,2 @@
-# basic-classic
-Child Theme for Hybopress Basic
+# Basic Classic
+Child Theme for Hybopress Basic.

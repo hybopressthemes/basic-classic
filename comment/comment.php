@@ -8,7 +8,7 @@
 			<cite <?php hybrid_attr( 'comment-author' ); ?>><?php comment_author_link(); ?></cite>
 			<a <?php hybrid_attr( 'comment-permalink' ); ?>><time <?php hybrid_attr( 'comment-published' ); ?>><?php printf( __( '%1$s at %2$s', 'classic' ), get_comment_date(), get_comment_time() ); ?></time></a>
 
-			<?php edit_comment_link( __( 'Edit This', 'classic' ), '(', ')' ); ?>
+			<span class="edit-this"><?php edit_comment_link( __( 'Edit This', 'classic' ), '(', ')' ); ?></span>
         </header><!-- .comment-meta -->
 
 		<div <?php hybrid_attr( 'comment-content' ); ?>>
